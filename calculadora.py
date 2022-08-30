@@ -1,28 +1,25 @@
 import math
 
-
 class calculadora:
     def __init__(self):
         pass
 
     def somar(self, num1, num2):
-        return num1 + num2
+        return float(num1) + float(num2)
 
 
     def subtrair(self, num1, num2):
-        return num1 + num2
-
-
+        return float(num1) - float(num2)
 
     def multiplicar(self, num1, num2):
-        return num1 + num2
+        return float(num1) * float(num2)
 
 
     def dividir(self, num1, num2):
         if num2 == 0:
             return 'Impossível dividor por ZERO!'
         else:
-            return num1 / num2
+            return float(num1) / float(num2)
 
     def potencia(self, base, expoente):
         if expoente == 0:
@@ -38,8 +35,8 @@ class calculadora:
             return 'Impossível calcular'
         else: return math.sqrt(num)
 
-    def tabuata(self, num):
-        for i in range(11)
+    def tabuada(self, num):
+        for i in range(11):
             resultado = resultado + "\n{} * {} = {}".format_map(num, i, int(num*i))
         return resultado
 

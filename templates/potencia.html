@@ -5,7 +5,7 @@
     <title>{{titulo}}</title>
 </head>
 <body>
-    <form action="/soma" method="POST">
+    <form action="/potencia" method="POST">
         <label for="number1">Número 01:</label>
         <input type="number" name="num1" class="form-control" id="number1" placeholder="Informe um número"/>
 
@@ -13,9 +13,13 @@
         <input type="number" name="num2" class="form-control" id="number2" placeholder="Informe um número"/>
 
 
-        <button type="submit" class="botao">Somar</button>
+        <button type="submit" class="botao">Potência</button>
 
         <label id='result'>{{resultado}}</label>
     </form>
+
+    <a href="/"><button type="submit" class="botao">Voltar Para Página Inicial</button></a>
+
+
 </body>
 </html>
